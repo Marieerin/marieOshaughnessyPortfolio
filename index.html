@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marie O'Shaughnessy</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a80f027cee.js" crossorigin="anonymous"></script>
+
+    <!-- googlefonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Vollkorn:ital,wght@0,400;1,400;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav>
+        <ul class="mainNav wrapper">
+            <li class="aboutMeSection">
+                About Me
+            </li>
+            <li class="skillsSection">
+                Skills
+            </li>
+            <li class="projectOneSection">
+                Projects
+            </li>
+            <li class="contactSection">
+                Contact
+            </li>
+        </ul>
+        <div class="wrapper hamburgerWrapper">
+            <label for="hamburger"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="hamburger">
+        </div>
+    </nav>
+    <header>
+            <!-- background image from  -->
+            <span>Welcome!</span>
+            <h1>I'm Marie O'Shaughnessy</h1>
+            <!-- <a href=""> -->
+                <i class="fas fa-arrow-alt-circle-down" id="arrowDown"></i>
+            <!-- </a> -->
+            <!-- <div class="tab">
+                <i class="fas fa-caret-down"></i>
+            </div> -->
+    </header>
+    <main class="wrapper">
+        <ul class="secondaryNav">
+            <li class="aboutMeSection">
+                About Me
+            </li>
+            <li class="skillsSection">
+                Skills
+            </li>
+            <li class="projectOneSection">Projects</li>
+            <li class="projectOneSection">
+                Project One
+            </li>
+            <li class="projectOneSection">
+                Project Two
+            </li>
+            <li class="contactSection">
+                Contact
+            </li>
+        </ul>
+        <ul class="mainContentList">
+            <li class="yourDiv section aboutMe" id="aboutMeSection">
+                <div class="aboutMeText">
+                    <h2>About Me</h2>
+                    <p>This is the section about meThis is the section about meThis is the section about meThis is the section about meThis is the section about meThis is the section about me</p>
+                </div>
+                <div class="aboutMeImage">
+                    <img src="./styles/assets/GoingForAHike(1).jpg" alt="">
+                </div>
+            </li>
+            <li class="section skills" id="skillsSection">
+                <h2>Skills</h2>
+                <ul class="skillsList">
+                    <li>
+                        <ul class="skillsRow">
+                            <li>
+                                <img src="./styles/assets/toolBox/html-5.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="./styles/assets/toolBox/css-3.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="./styles/assets/toolBox/javascript.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="./styles/assets/toolBox/visual-studio-code.svg" alt="">
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="skillsRow">
+                            <li>
+                                <img src="./styles/assets/toolBox/jquery.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="./styles/assets/toolBox/react.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="./styles/assets/toolBox/sass.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="./styles/assets/toolBox/firebase.svg" alt="">
+                            </li>
+                        
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <!-- project mockup pdf from here https://www.designbolts.com/2017/07/26/free-fully-customizable-apple-macbook-pro-mockup-psd/ -->
+            <li class="section project projectOne" id="projectOneSection">
+                <img src="./styles/assets/Free Fully Customizable Apple Macbook Mockup PSD.jpg" alt="">
+                <ul class="projectInformation">
+                    <li class="projectDescription">
+                        <h2>Project One</h2>
+                        <p>This project is about some fun stuff and cool things</p>
+                        <ul class="projectTools">
+                            <li>
+                                <img src="./styles/assets/toolBox/react.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="./styles/assets/toolBox/css-3.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="./styles/assets/toolBox/javascript.svg" alt="">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="projectLinks">
+                        <a href="">
+                            GitHub <i class="fas fa-long-arrow-alt-right"></i>
+                        </a>
+                        <a href="">
+                            Live Link <i class="fas fa-long-arrow-alt-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="section project projectOne" id="projectsTwoSection">
+                <img src="./styles/assets/Free Fully Customizable Apple Macbook Mockup PSD.jpg" alt="">
+                <ul class="projectInformation">
+                    <li class="projectDescription">
+                        <h2>Project One</h2>
+                        <p>This project is about some fun stuff and cool things</p>
+                    </li>
+                    <li class="projectLinks">
+                        <a href="">
+                            GitHub
+                        </a>
+                        <a href="">
+                            Live Link
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="section contact" id="contactSection">
+                <h2>Contact me!</h2>
+                <ul>
+                    <li><p>m.oshaughnessy@outlook.com</p></li>
+                    <li>
+                        <ul class="socialMedia">
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <span class="wrapper">Thanks to </span>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
