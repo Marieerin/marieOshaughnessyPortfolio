@@ -46,7 +46,6 @@ a {
     text-decoration: none;
 }
 
-
 /* NAV BAR */
 nav {
     background-color: white;
@@ -150,7 +149,6 @@ h1 {
     cursor: pointer;
 }
 
-
 /* MAIN */
 .secondaryNav {
     position: sticky;
@@ -213,6 +211,7 @@ h2 {
     font-size: 16.5px;
     font-weight: 400;
 }
+
 /* ABOUT ME */
 .aboutMe{ 
     flex-direction: row;
@@ -259,7 +258,6 @@ h2 {
 }
 .projectLinks a {
     margin-right:25px;
-    
     font-family: 'Karla', sans-serif;
 }
 .projectLinks a:hover,
@@ -286,8 +284,6 @@ h2 {
     margin: 10px;
 }
 
-
-
 /* FOOTER */
 footer {
     height: 50px;
@@ -308,8 +304,6 @@ footer span {
 }
 footer a {
     color: white;
-    
-
 }
 
 /* MEDIA QUERIES */
@@ -321,7 +315,6 @@ footer a {
     .section.project {
         flex-direction: row;
     }
-
     /* FOOTER */
 }
 @media screen and (max-width: 600px){
@@ -349,7 +342,6 @@ footer a {
         height: 100vh;
         padding-top: 30px;
     }
-
     /* HEADER */
     header {
         height: 100vh;

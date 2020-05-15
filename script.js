@@ -1,46 +1,16 @@
-// $(window).scroll(() => {
-//     const positionOnYAxis = ($(window).scrollTop());
-
-//     if (positionOnYAxis > 900) {
-
-//         $('.section').css("box-shadow","purple")
-//     }
-// })
-
-
-//     $(document).on("scroll", function () {
-//         const section = $('.section')
-//         const pageHeight = $(window).pageHeight
-//         section.toggleClass(".focused")
-//         var pageTop = $(document).scrollTop()
-//         var pageBottom = pageTop + $(window).height()
-//         const tag = $('.section')
-//         for (var i = 0; i < tags.length; i++) {
-//             var tag = tags[i]
-
-//             if ($(tag).position().top < pageBottom) {
-//                 $(tag).addClass("focused")
-//             } else {
-//                 $(tag).removeClass("focused")
-//             }
-//         }
-//     })
-
-
-
-
-
-
 $(document).ready(function () {
+    // makes sure hamburger menu is not checked on refresh or reopen
     $('#hamburger').prop('checked', false)
 
+    // scrolls down to about me section
     $("#arrowDown").on('click', () => {
         $('html').animate({
             scrollTop: $('main').offset().top
         }, 1000)
     })
 
-   const scrollToSection = (e) => {
+    // function for crolling to the selected section
+    const scrollToSection = (e) => {
         const sectionSelected = e.target.className
         $('html').animate({
             scrollTop: $(`#${sectionSelected}`).offset().top
@@ -55,15 +25,17 @@ $(document).ready(function () {
         scrollToSection(e)
     })
 
+    // haburger menu functionality
+    // on click hamburger will appear
     $(".hamburgerWrapper").on("click", () => {
         if($('#hamburger').is(':checked')){
-        console.log('hi');
             $('.mainNav').css("left", "0")
         } else {
             $('.mainNav').css("left", "-100%")
         }
     })
 
+    // when anything in the menu is clicked the hamburger menu will dissapear
     $(".mainNav").on('click', () => {
         $('.mainNav').css("left", "-100%")
         $('#hamburger').prop('checked', false);
