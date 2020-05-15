@@ -104,7 +104,6 @@ nav {
     display: none;
 }
 
-
 /* HEADER */
 header{
     flex-direction: column;
@@ -125,6 +124,11 @@ h1,
 {
     color: black;
     text-shadow: 2px 2px 0 white;
+}
+.fa-arrow-alt-circle-down:hover,
+.fa-arrow-alt-circle-down:focus{
+    translate: 0px 2px;
+    text-shadow:1px 1px 0 whitesmoke ;
 }
 header span {
     font-family: 'Karla', sans-serif;
@@ -216,14 +220,10 @@ h2 {
 }
 .aboutMeText {
     width: 65%;
-    text-align: left;
 }
 .aboutMeImage{
     width: 25%;
-    /* background-image: url("./assets/GoingForAHike(1).jpg"); */
-}
-.aboutMeImage img {
-    border-radius: 50%;
+    margin-left: 10px;
 }
 
 /* SKILLS */
