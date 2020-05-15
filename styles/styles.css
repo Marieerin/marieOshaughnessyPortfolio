@@ -70,19 +70,28 @@ nav {
     text-decoration: underline;
 }
 .mainNav .aboutMeSection:hover,
-.mainNav .aboutMeSection:focus{
+.mainNav .aboutMeSection:focus,
+.fa-github:hover,
+.fa-github:focus{
     color: #598288;;
 }
 .mainNav .skillsSection:hover,
-.mainNav .skillsSection:focus{
+.mainNav .skillsSection:focus,
+.fa-linkedin-in:hover,
+.fa-linkedin-in:focus{
     color: #e1ad42;
 }
 .mainNav .projectOneSection:hover,
-.mainNav .projectOneSection:focus{
+.mainNav .projectOneSection:focus,
+.fa-twitter:hover,
+.fa-twitter:focus
+{
     color: #d04b52;
 }
 .mainNav .contactSection:hover,
-.mainNav .contactSection:focus{
+.mainNav .contactSection:focus,
+.fa-instagram:hover,
+.fa-instagram:focus{
     color: #4141ce;
 }
 
@@ -93,11 +102,8 @@ nav {
     font-size: 20px;
 }
 #hamburger {
-    opacity: 0;
+    display: none;
 }
-/* #hamburger:checked .mainNav {
-    left: 0;
-} */
 
 
 /* HEADER */
@@ -148,11 +154,12 @@ h1 {
     height: 100%;
     width: 15vw;
     margin-top: 100px;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky; 
     top: 100px;
     line-height: 20px;
 }
 .secondaryNav li {
+    margin-bottom: 13px;
     cursor: pointer;
     font-family: 'Karla', sans-serif;
     font-size: 20px;
@@ -160,6 +167,11 @@ h1 {
     letter-spacing: 5px;
     color: black;
     text-shadow: 2px 2px 0 white;
+}
+.secondaryNav li:hover,
+.secondaryNav li:focus {
+    text-decoration: underline;
+    margin-left: 15px;
 }
 .mainContentList {
     margin-top: 50px;
@@ -183,7 +195,7 @@ h1 {
 }
 h2 {
     font-family: 'Vollkorn', serif;
-    font-size: 30px;
+    font-size: 23px;
     font-weight: 600;
     font-style: italic;
     letter-spacing: 4px;
@@ -191,8 +203,8 @@ h2 {
 }
 .section p {
     margin-bottom: 25px;
-    line-height: 23px;
-    letter-spacing: 5px;
+    line-height: 18px;
+    letter-spacing: 3px;
 
     font-family: 'Karla', sans-serif;
     font-size: 16.5px;
@@ -234,8 +246,8 @@ h2 {
 /* PROJECTS */
 .projectInformation {
     flex-direction: column;
-    /* padding: 25px 15px; */
-    padding: 50px;
+    padding: 25px 15px;
+    width: 61%;
     justify-content: space-between;
 }
 .projectDescription{
@@ -244,7 +256,7 @@ h2 {
     text-align: left;
 }
 .projectLinks{
-    margin-top: 50px;
+    margin-top: 15px;
 }
 .projectLinks a {
     margin-right:25px;
@@ -313,7 +325,7 @@ footer span {
         background-color: #ffffffa6;
         height: 40px;
         position: fixed;
-        z-index: 20;
+        z-index: 100;
         display: inline-block;
         width: 100vw;
     }
@@ -326,20 +338,18 @@ footer span {
         position: absolute;
         display: block;
         left: -100%;
-        background-color: rgba(255, 255, 255, 0.11);
+        background-color: rgba(255, 255, 255, 0.904);
+        width: 100vw;
+        height: 100vh;
+        padding-top: 30px;
     }
-    #hamburger:checked ~ .mainNav {
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-    }
+
     /* HEADER */
     header {
         height: 100vh;
     }
     h1 {
-        font-size: 30px;
+        font-size: 43px;
     }
     header span {
         font-size: 25px;
@@ -351,17 +361,43 @@ footer span {
     .mainContentList {
         width: 100%;
     }
+    .aboutMeImage {
+        display: none;
+    }
+    .aboutMe {
+        padding: 25px;
+    }
+    .aboutMeText {
+        width: 100%;
+        text-align: center;
+    }
+    .skills {
+        padding: 25px;
+    }
+
+    .skillsRow li {
+        margin: 5px;
+    }
     .projectLinks{
         justify-content: end;
         align-items: end;
     }
+
+
+
     /* FOOTER */
 }
 @media screen and (max-width: 400px){
     /* GLOBAL */
     /* NAV */
     /* HEADER */
+    h1 {
+        font-size: 29px;
+    }
     /* MAIN */
+    .mainContentList {
+        margin-top: 16px;
+    }
     h2 {
         margin: 5px 0;
         font-size: 21px;
@@ -375,8 +411,18 @@ footer span {
     .aboutMe {
         padding: 15px;
     }
-    .aboutMeImage {
-        display: none;
+    .skills {
+        padding: 15px;
+    }
+    .projectInformation {
+        padding: 15px;
+    }
+    .projectLinks {
+        margin-top: 15px;
+    }
+    .contact {
+        padding: 15px;
+        margin-bottom: 16px;
     }
     /* FOOTER */
 }

@@ -32,10 +32,11 @@
 
 
 $(document).ready(function () {
+    $('#hamburger').prop('checked', false)
 
     $("#arrowDown").on('click', () => {
         $('html').animate({
-            scrollTop: $('#aboutMeSection').offset().top
+            scrollTop: $('main').offset().top
         }, 1000)
     })
 
@@ -54,5 +55,17 @@ $(document).ready(function () {
         scrollToSection(e)
     })
 
+    $(".hamburgerWrapper").on("click", () => {
+        if($('#hamburger').is(':checked')){
+        console.log('hi');
+            $('.mainNav').css("left", "0")
+        } else {
+            $('.mainNav').css("left", "-100%")
+        }
+    })
 
+    $(".mainNav").on('click', () => {
+        $('.mainNav').css("left", "-100%")
+        $('#hamburger').prop('checked', false);
+    })
 });
