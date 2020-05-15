@@ -218,11 +218,13 @@ h2 {
     padding: 50px;
 }
 .aboutMeText {
-    width: 65%;
+    width: 50%;
+    margin: 0 30px;
 }
 .aboutMeImage{
     width: 25%;
     margin-left: 10px;
+    box-shadow: 2px 2px 0px black;
 }
 
 /* SKILLS */
@@ -266,7 +268,7 @@ h2 {
 }
 .projectTools img {
     height: 35px;
-    margin: 10px;
+    margin-right: 10px;
 }
 
 
@@ -411,6 +413,7 @@ footer a {
     }
     .projectInformation {
         padding: 15px;
+        width: 100%;
     }
     .projectLinks {
         margin-top: 15px;
