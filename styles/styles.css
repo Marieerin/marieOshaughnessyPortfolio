@@ -73,7 +73,7 @@ nav {
 .mainNav .aboutMeSection:focus,
 .fa-github:hover,
 .fa-github:focus{
-    color: #598288;;
+    color: #598288;
 }
 .mainNav .skillsSection:hover,
 .mainNav .skillsSection:focus,
@@ -94,7 +94,6 @@ nav {
 .fa-instagram:focus{
     color: #4141ce;
 }
-
 .hamburgerWrapper{
     display: none;
 }
@@ -303,7 +302,14 @@ footer {
     align-items: center;
 }
 footer span {
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 3px;
     font-size: 12px;
+}
+footer a {
+    color: white;
+    
+
 }
 
 /* MEDIA QUERIES */
@@ -382,9 +388,6 @@ footer span {
         justify-content: end;
         align-items: end;
     }
-
-
-
     /* FOOTER */
 }
 @media screen and (max-width: 400px){
