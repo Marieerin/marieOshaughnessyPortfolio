@@ -37,7 +37,6 @@ footer
     display: flex;
 }
 
-
 ul{
     list-style: none;
 }
@@ -104,7 +103,7 @@ nav {
 }
 
 /* HEADER */
-header{
+header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -150,10 +149,18 @@ h1 {
 }
 
 /* MAIN */
+.secondaryNav .projectOneSection,
+.secondaryNav .projectTwoSection,
+.secondaryNav .projectThreeSection,
+.secondaryNav .projectFourSection,
+.secondaryNav .projectFiveSection {
+    font-family: 'Vollkorn', serif!important;
+    padding: 0 10px;
+}
 .secondaryNav {
     position: sticky;
     height: 100%;
-    width: 15vw;
+    width: 22vw;
     margin-top: 100px;
     position: -webkit-sticky; 
     top: 100px;
@@ -164,7 +171,6 @@ h1 {
     cursor: pointer;
     font-family: 'Karla', sans-serif;
     font-size: 20px;
-    font-weight: 400;
     letter-spacing: 5px;
     color: black;
     text-shadow: 2px 2px 0 white;
@@ -183,7 +189,6 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     box-shadow:1px 1px 5px rgba(128, 128, 128, 0.31);
     background-color: #fff;
 }
@@ -200,13 +205,11 @@ h2 {
     font-weight: 600;
     font-style: italic;
     letter-spacing: 4px;
-    margin: 25px 0;
+    margin: 0 0 25px 0;
 }
 .section p {
     margin-bottom: 25px;
-    line-height: 18px;
-    letter-spacing: 3px;
-
+    line-height: 22px;
     font-family: 'Karla', sans-serif;
     font-size: 16.5px;
     font-weight: 400;
@@ -222,7 +225,7 @@ h2 {
     margin: 0 30px;
 }
 .aboutMeImage{
-    width: 25%;
+    width: 150px;
     margin-left: 10px;
     box-shadow: 2px 2px 0px black;
 }
@@ -239,7 +242,6 @@ h2 {
     justify-content: space-evenly;
 }
 .skillsRow li {
-    margin: 25px;
     width: 12%;
 }
 
@@ -247,12 +249,11 @@ h2 {
 .projectInformation {
     flex-direction: column;
     padding: 25px 15px;
-    width: 61%;
+    width: 85%;
     justify-content: space-between;
 }
 .projectDescription{
     flex-direction: column;
-    width: 90%;
     text-align: left;
 }
 .projectLinks{
@@ -401,7 +402,6 @@ footer a {
         letter-spacing: 2px;
     }
     .section p{
-        letter-spacing: 1px;
         font-size: 13.5px;
         margin-bottom: 5px;
     }
