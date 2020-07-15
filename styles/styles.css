@@ -180,6 +180,12 @@ h1 {
     text-decoration: underline;
     margin-left: 15px;
 }
+li.removeListHoverEffect:hover,
+li.removeListHoverEffect:focus {
+    cursor: default;
+    text-decoration: none;
+    margin-left: 0;
+}
 .mainContentList {
     margin-top: 50px;
     width: 75vw;
