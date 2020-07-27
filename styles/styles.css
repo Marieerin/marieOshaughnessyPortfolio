@@ -12,6 +12,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* GLOBAL STYLES */ 
 body{
+    color: #282828;
     background-color: rgb(230, 230, 230);
     scroll-behavior: smooth;
 }
@@ -36,7 +37,6 @@ footer
 {
     display: flex;
 }
-
 ul{
     list-style: none;
 }
@@ -102,6 +102,9 @@ nav {
     display: none;
 }
 
+.fab {
+    font-size: 25px;
+}
 /* HEADER */
 header {
     flex-direction: column;
@@ -207,6 +210,7 @@ li.removeListHoverEffect:focus {
     width: 100%;
 }
 h2 {
+    text-shadow: 2px 2px #e6e6e6;
     font-family: 'Vollkorn', serif;
     font-size: 23px;
     font-weight: 600;
@@ -234,7 +238,7 @@ h2 {
 .aboutMeImage{
     width: 150px;
     margin-left: 10px;
-    box-shadow: 2px 2px 0px black;
+    box-shadow: 3px 3px  #ccc;
 }
 
 /* SKILLS */
@@ -249,8 +253,22 @@ h2 {
     justify-content: space-evenly;
 }
 .skillsRow li {
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
     width: 12%;
 }
+.skillsRow img {
+    height: calc(100px + 1vw);
+}
+.skillsRow span {
+    font-size: 12px;
+    margin-bottom: 25px;
+    line-height: 22px;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+}
+
 
 /* PROJECTS */
 .projectInformation {
@@ -262,6 +280,14 @@ h2 {
 .projectDescription{
     flex-direction: column;
     text-align: left;
+}
+.projectDescription span {
+    font-size: 12px;
+    margin-bottom: 25px;
+    line-height: 22px;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 .projectLinks{
     margin-top: 15px;
@@ -292,6 +318,10 @@ h2 {
 .socialMedia a {
     font-size: 20px;
     margin: 10px;
+}
+.socialMedia .fab {
+    font-size: 30px;
+    text-shadow: 2px 2px #e6e6e6;
 }
 
 /* FOOTER */
