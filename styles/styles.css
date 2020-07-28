@@ -249,6 +249,9 @@ h2 {
     flex-direction: column;
     width: 90%;
 }
+.rowContainer {
+    justify-content: center;
+}
 .skillsRow {
     justify-content: space-evenly;
 }
