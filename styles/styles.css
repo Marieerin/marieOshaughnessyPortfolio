@@ -303,11 +303,11 @@ h2 {
 .projectLinks a:focus{
     text-decoration: underline;
 }
-.projectTools img {
-    height: 35px;
-    margin-right: 10px;
-}
 
+.commingSoon {
+    text-transform: uppercase;
+    color: #d04b52;
+}
 
 /* CONTACT */
 .contact {
