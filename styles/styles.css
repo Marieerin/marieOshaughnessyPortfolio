@@ -279,6 +279,12 @@ h2 {
     text-transform: uppercase;
     width: 12%;
 }
+.skillsRow.two li {
+    width: 20%;
+}
+.skillsRow.two i {
+    font-size: 60px;
+}
 .skillsRow img {
     height: calc(100px + .1vw);
 }
