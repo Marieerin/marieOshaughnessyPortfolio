@@ -50,7 +50,7 @@ nav {
     background-color: white;
 }
 .mainNav {
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     height: 75px;
 }
