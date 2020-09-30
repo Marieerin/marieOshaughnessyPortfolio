@@ -245,6 +245,24 @@ h2 {
 .skills {
     padding: 50px;
 }
+.spinnyWheelOfDoom {
+    width: 100px;
+    height: 100px;
+    border: 8px solid #b8b1b142;
+    border-top: 8px solid #4141ce;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    box-shadow: 0 0 5px #80808059;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+        
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 .skillsList {
     flex-direction: column;
     width: 90%;
