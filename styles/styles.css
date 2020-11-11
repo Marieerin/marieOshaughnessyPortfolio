@@ -15,11 +15,12 @@ body{
     color: #282828;
     background-color: rgb(230, 230, 230);
     scroll-behavior: smooth;
+    font-family: 'Karla', sans-serif;
 }
 .wrapper{
     max-width: 1200px;
     margin: 0 auto;
-    width: 90vw;
+    width: 94vw;
 }
 nav,
 header,
@@ -107,7 +108,6 @@ nav {
 }
 /* HEADER */
 header {
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -116,7 +116,8 @@ header {
     font-weight: bold;
     background:linear-gradient(45deg, rgba(213, 216, 219, 0.603), rgba(253, 253, 253, 0.589)), url("./assets/robert-keane-rlbG0p_nQOU-unsplash.jpg");
     background-size: cover;
-    height: 91vh;
+    height: 73vh;
+    padding: 0 20px;
 }
 header span,
 h1,
@@ -131,6 +132,18 @@ h1,
     translate: 0px 2px;
     text-shadow:1px 1px 0 whitesmoke ;
 }
+header .imageContainer {
+    width: 54%;
+    box-shadow: 2px 2px 0 white, -2px -2px 0 white;
+    border: 2px solid white;
+}
+header .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 header span {
     font-family: 'Karla', sans-serif;
     font-size: 30px;
@@ -138,15 +151,17 @@ header span {
     letter-spacing: 5px;
 }
 h1 {
-    margin: 50px;
+    width: 85%;
+    font-size: 50px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white,3px 4px 0 white;
+    margin: 34px;
     font-family: 'Vollkorn', serif;
-    font-size: 58px;
     font-weight: 900;
     font-style: italic;
     letter-spacing: 4px;
-
 }
 .fa-arrow-alt-circle-down {
+    padding: 20px;
     font-size: 50px;
     cursor: pointer;
 }
@@ -163,7 +178,7 @@ h1 {
 .secondaryNav {
     position: sticky;
     height: 100%;
-    width: 22vw;
+    width: 13vw;
     margin-top: 100px;
     position: -webkit-sticky; 
     top: 100px;
@@ -173,7 +188,7 @@ h1 {
     margin-bottom: 13px;
     cursor: pointer;
     font-family: 'Karla', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 5px;
     color: black;
     font-weight: bold;
@@ -181,18 +196,21 @@ h1 {
 }
 .secondaryNav li:hover,
 .secondaryNav li:focus {
-    text-decoration: underline;
+    position: relative;
+    /* text-decoration: underline; */
     margin-left: 15px;
+    border-bottom: 1px solid black;
 }
 li.removeListHoverEffect:hover,
 li.removeListHoverEffect:focus {
     cursor: default;
     text-decoration: none;
     margin-left: 0;
+    border-bottom: none;
 }
 .mainContentList {
     margin-top: 50px;
-    width: 75vw;
+    width: 84vw;
     height: 100%;
 }
 .section {
@@ -212,7 +230,7 @@ li.removeListHoverEffect:focus {
 h2 {
     text-shadow: 2px 2px #e6e6e6;
     font-family: 'Vollkorn', serif;
-    font-size: 23px;
+    font-size: 42px;
     font-weight: 600;
     font-style: italic;
     letter-spacing: 4px;
@@ -229,16 +247,16 @@ h2 {
 /* ABOUT ME */
 .aboutMe{ 
     flex-direction: row;
-    padding: 50px;
+    /* padding: 50px; */
 }
 .aboutMeText {
     width: 50%;
     margin: 0 30px;
 }
 .aboutMeImage{
-    width: 150px;
-    margin-left: 10px;
-    box-shadow: 3px 3px  #ccc;
+    width: 50%;
+    /* margin-left: 10px; */
+    /* box-shadow: 3px 3px  #ccc; */
 }
 
 /* SKILLS */
@@ -337,10 +355,23 @@ h2 {
 .contact {
     padding: 50px;
     margin-bottom: 50px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contact .imageContainer,
+.contact .textContainer{ 
+    width: 50%;
+}
+.contact .textContainer {
+    padding: 30px;
 }
 .contact li {
     justify-content: center;
     align-items: center;
+}
+.contact span {
+    margin: 0 0 10px;
 }
 .socialMedia a {
     font-size: 20px;
@@ -361,6 +392,8 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -378,6 +411,9 @@ footer a {
     /* GLOBAL */
     /* NAV */
     /* HEADER */
+    h1{
+        font-size: 40px;
+    }
     /* MAIN */
     .section.project {
         flex-direction: row;
@@ -410,11 +446,17 @@ footer a {
         padding-top: 30px;
     }
     /* HEADER */
+    h1{
+        position: absolute;    
+        right: 2%;
+        width: 55%;
+        font-size: 37px;
+    }
+    header .imageContainer {
+    width: 100%;
+    }
     header {
         height: 100vh;
-    }
-    h1 {
-        font-size: 43px;
     }
     header span {
         font-size: 25px;
@@ -447,14 +489,31 @@ footer a {
         justify-content: end;
         align-items: end;
     }
+    .contact {
+        padding: 0 ;
+        margin-bottom: 16px;
+    }
     /* FOOTER */
 }
 @media screen and (max-width: 400px){
     /* GLOBAL */
     /* NAV */
     /* HEADER */
+    header {
+        height: 100%;
+        padding-top: 40px;
+    }
+    header .wrapper {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
     h1 {
         font-size: 29px;
+        position: initial;
+        width: 100%;
+        margin: 0;
+        margin-top: 22px;
     }
     /* MAIN */
     .mainContentList {
@@ -482,9 +541,9 @@ footer a {
     .projectLinks {
         margin-top: 15px;
     }
-    .contact {
-        padding: 15px;
-        margin-bottom: 16px;
+    .contact .textContainer {
+        padding: 11px;
+        word-wrap: break-word;
     }
     /* FOOTER */
 }
