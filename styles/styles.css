@@ -151,7 +151,7 @@ header span {
     letter-spacing: 5px;
 }
 h1 {
-    width: 85%;
+    width: 350px;
     font-size: 50px;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white,3px 4px 0 white;
     margin: 34px;
@@ -172,8 +172,7 @@ h1 {
 .secondaryNav .projectThreeSection,
 .secondaryNav .projectFourSection,
 .secondaryNav .projectFiveSection {
-    font-family: 'Vollkorn', serif!important;
-    padding: 0 10px;
+    margin-left: 10px;
 }
 .secondaryNav {
     position: sticky;
@@ -192,13 +191,13 @@ h1 {
     letter-spacing: 5px;
     color: black;
     font-weight: bold;
-    text-shadow: 3px 3px 0 white;
+    text-shadow: 1px 1px 0 white;
 }
 .secondaryNav li:hover,
 .secondaryNav li:focus {
     position: relative;
-    /* text-decoration: underline; */
     margin-left: 15px;
+    margin-bottom: 12px;
     border-bottom: 1px solid black;
 }
 li.removeListHoverEffect:hover,
@@ -206,6 +205,7 @@ li.removeListHoverEffect:focus {
     cursor: default;
     text-decoration: none;
     margin-left: 0;
+    margin-bottom: 13px;
     border-bottom: none;
 }
 .mainContentList {
@@ -264,8 +264,8 @@ h2 {
     padding: 50px;
 }
 .spinnyWheelOfDoom {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border: 8px solid #b8b1b142;
     border-top: 8px solid #4141ce;
     border-radius: 50%;
@@ -313,9 +313,10 @@ h2 {
     font-family: 'Karla', sans-serif;
     font-weight: bold;
 }
-
-
 /* PROJECTS */
+.project {
+    flex-direction: row;
+}
 .projectInformation {
     flex-direction: column;
     padding: 25px 15px;
@@ -355,7 +356,6 @@ h2 {
 .contact {
     padding: 50px;
     margin-bottom: 50px;
-    text-align: center;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -367,11 +367,14 @@ h2 {
     padding: 30px;
 }
 .contact li {
-    justify-content: center;
     align-items: center;
 }
 .contact span {
     margin: 0 0 10px;
+}
+.emailSection span {
+    display: none;
+    font-size: 25px;
 }
 .socialMedia a {
     font-size: 20px;
@@ -407,18 +410,26 @@ footer a {
 }
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 1000px){
+@media screen and (max-width: 1000px){
     /* GLOBAL */
     /* NAV */
     /* HEADER */
     h1{
         font-size: 40px;
+        position: absolute;  
+        right: 20px;
     }
     /* MAIN */
     .section.project {
         flex-direction: row;
     }
     /* FOOTER */
+}
+@media screen and (max-width: 800px){
+    .section.project {
+        flex-direction: column;
+    }
+
 }
 @media screen and (max-width: 600px){
     /* GLOBAL */
@@ -447,7 +458,7 @@ footer a {
     }
     /* HEADER */
     h1{
-        position: absolute;    
+        /* position: absolute;     */
         right: 2%;
         width: 55%;
         font-size: 37px;
@@ -485,6 +496,10 @@ footer a {
     .skillsRow li {
         margin: 5px;
     }
+    .section.project {
+        flex-direction: column;
+    }
+
     .projectLinks{
         justify-content: end;
         align-items: end;
@@ -495,6 +510,28 @@ footer a {
     }
     /* FOOTER */
 }
+@media screen and (max-width: 552px){
+    header {
+        height: 100%;
+        padding-top: 40px;
+    }
+
+    header .wrapper {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 29px;
+        position: initial;
+        width: 279px;
+        margin: 0;
+        margin-top: 22px;
+    }
+
+}
+
 @media screen and (max-width: 400px){
     /* GLOBAL */
     /* NAV */
@@ -503,7 +540,7 @@ footer a {
         height: 100%;
         padding-top: 40px;
     }
-    header .wrapper {
+    /* header .wrapper {
         flex-direction: column;
         width: 100%;
         margin: 0;
@@ -514,7 +551,7 @@ footer a {
         width: 100%;
         margin: 0;
         margin-top: 22px;
-    }
+    } */
     /* MAIN */
     .mainContentList {
         margin-top: 16px;
@@ -532,19 +569,54 @@ footer a {
         padding: 15px;
     }
     .skills {
-        padding: 15px;
+        padding: 7px;
+    }
+    .skillsRow img {
+        height: 100px;
+    }
+    .skillsRow li {
+        width: 16%;
+    }
+    .skillsRow span {
+        font-size: 10px;
+        margin-bottom: 0px;
+        margin-bottom: 0;
+    }
+    .section.project {
+        flex-direction: column;
     }
     .projectInformation {
         padding: 15px;
         width: 100%;
     }
+    .projectDescription span {
+        margin-bottom: 4px;
+    }
     .projectLinks {
         margin-top: 15px;
+        justify-content: start;
+    }
+    .emailSection p {
+        display: none;
+    }
+    .emailSection span {
+        display: initial;
     }
     .contact .textContainer {
-        padding: 11px;
-        word-wrap: break-word;
+        padding: 6px;
     }
+    .socialMedia a {
+        margin: 5px;
+    }
+    .socialMedia .fab {
+    font-size: 26px;
+}
     /* FOOTER */
+    footer {
+        height: 85px;
+    }
+    footer span {
+        margin: 4px 0;
+    }
 }
 
