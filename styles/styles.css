@@ -122,8 +122,7 @@ header {
 header span,
 h1,
 .fa-arrow-alt-circle-down,
-.fa-bars
-{
+.fa-bars{
     color: black;
     text-shadow: 2px 2px 0 white;
 }
@@ -136,6 +135,9 @@ header .imageContainer {
     width: 54%;
     box-shadow: 2px 2px 0 white, -2px -2px 0 white;
     border: 2px solid white;
+}
+header img {
+    width: 100%;
 }
 header .textContainer {
     display: flex;
@@ -375,14 +377,18 @@ h2 {
 .emailSection span {
     display: none;
     font-size: 25px;
+    cursor: pointer;
 }
 .socialMedia a {
     font-size: 20px;
-    margin: 10px;
+    margin: 15px;
 }
 .socialMedia .fab {
     font-size: 30px;
     text-shadow: 2px 2px #e6e6e6;
+}
+.contact .socialMedia a {
+    margin-left: 0;
 }
 
 /* FOOTER */
@@ -428,6 +434,13 @@ footer a {
 @media screen and (max-width: 800px){
     .section.project {
         flex-direction: column;
+    }
+    .emailSection p {
+        display: none;
+    }
+
+    .emailSection span {
+        display: initial;
     }
 
 }
@@ -595,12 +608,6 @@ footer a {
     .projectLinks {
         margin-top: 15px;
         justify-content: start;
-    }
-    .emailSection p {
-        display: none;
-    }
-    .emailSection span {
-        display: initial;
     }
     .contact .textContainer {
         padding: 6px;
