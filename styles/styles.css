@@ -408,10 +408,20 @@ footer a {
     /* GLOBAL */
     /* NAV */
     /* HEADER */
+    header .wrapper {
+        flex-direction: column;
+    }
     h1{
+        width: 100;
         font-size: 40px;
-        position: absolute;  
-        right: 20px;
+        /* position: absolute;  
+        right: 20px; */
+    }
+    #lrgName {
+        font-size: 92px;
+    }
+    #scrollBox {
+        width: initial;
     }
     /* MAIN */
     .section.project {
