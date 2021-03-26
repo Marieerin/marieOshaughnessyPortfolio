@@ -58,9 +58,8 @@ h2 {
     position: relative;
     width: 124px;
     transform: rotate(45deg);
-    margin: 132px;
-    margin-left: 0;
-    margin-top: 17px;
+    right: 45px;
+    bottom: 235px;
 }
 
 .leftWing {
@@ -120,8 +119,10 @@ h2 {
 }
 
 .butterfly2 {
-    left: 694px;
-    top: 146px;
+    display: flex;
+    position: relative;
+    top: 158px;
+    left: -47px;
     transform: rotate(-45deg);
     width: 70px;
     animation-delay: 5s;
@@ -166,8 +167,9 @@ header {
     position: relative;
     color: white;
     font-weight: bold;
-    height: 73vh;
+    height: 83vh;
     padding: 0 20px;
+    margin-bottom: 50px;
 }
 header div.wrapper {
     display: flex;
@@ -275,7 +277,8 @@ li.removeListHoverEffect:focus {
 .section {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    margin-top: 100px;
 }
 .focused{
     box-shadow:1px 1px 5px grey;
@@ -294,6 +297,7 @@ li.removeListHoverEffect:focus {
 
 /* ABOUT ME */
 .aboutMe{ 
+    position: relative;
     flex-direction: row;
 }
 .aboutMeText {
@@ -347,6 +351,7 @@ li.removeListHoverEffect:focus {
 /* CONTACT */
 .contact {
     padding: 50px;
+    padding-left: 0;
     margin-bottom: 50px;
     flex-direction: row;
     justify-content: space-between;
@@ -354,9 +359,6 @@ li.removeListHoverEffect:focus {
 .contact .imageContainer,
 .contact .textContainer{ 
     width: 50%;
-}
-.contact .textContainer {
-    padding: 30px;
 }
 .contact li {
     align-items: center;
@@ -485,6 +487,7 @@ footer a {
         padding: 25px;
     }
     .aboutMeText {
+        margin-right: 30px;
         width: 100%;
         text-align: center;
     }
