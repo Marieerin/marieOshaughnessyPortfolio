@@ -43,8 +43,8 @@ ul{
     list-style: none;
 }
 a {
-    color: #313844;
     text-decoration: none;
+    color: white;
 }
 h2 {
     font-family: 'sen', sans-serif;
@@ -134,7 +134,8 @@ h2 {
     align-items: center;
     height: 75px;
 }
-.mainNav li {
+.mainNav li,
+.mainNav i {
     color: #313844;
     cursor: pointer;
     padding: 10px 0 10px 25px;
@@ -298,6 +299,8 @@ li.removeListHoverEffect:focus {
 }
 .aboutMeText {
     width: 60%;
+}
+.aboutMeImage{
 }
 .aboutMeImage img {
     width: 444px;
