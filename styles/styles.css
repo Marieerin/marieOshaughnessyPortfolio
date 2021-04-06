@@ -15,7 +15,7 @@ html {
     background-color: black;
 }
 body{
-    background: linear-gradient(0deg, rgba(47,49,71,1) 0%, rgba(66,73,139,1) 30%, rgba(132,195,252,1) 70%, rgba(131,117,144,1) 96%); 
+    background: linear-gradient(0deg, rgba(47,49,71,1) 0%, rgba(66,73,139,1) 30%, rgba(132,195,252,1) 70%,rgb(255, 204, 233) 96%); 
     color: white;
     scroll-behavior: smooth;
     font-family: 'Karla', sans-serif;
@@ -43,7 +43,7 @@ ul{
     list-style: none;
 }
 a {
-    color: #CEFFDC;
+    color: #313844;
     text-decoration: none;
 }
 h2 {
@@ -135,13 +135,13 @@ h2 {
     height: 75px;
 }
 .mainNav li {
+    color: #313844;
     cursor: pointer;
     padding: 10px 0 10px 25px;
     font-family: 'Karla', sans-serif;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 2px;
-    color: #CEFFDC;
 }
 .mainNav li:hover,
 .mainNav li:focus {
@@ -165,11 +165,12 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
-    color: white;
     font-weight: bold;
     height: 83vh;
     padding: 0 20px;
     margin-bottom: 50px;
+    color: #313844;
+    text-shadow: 2px 2px 0 #0cffff6b;
 }
 header div.wrapper {
     display: flex;
@@ -188,15 +189,10 @@ h1,
 h1 {
     font-size: 71px;
 }
-h1,
-.fa-arrow-alt-circle-down,
-.fa-bars{
-    color: #CEFFDC;
-}
 .fa-arrow-alt-circle-down:hover,
 .fa-arrow-alt-circle-down:focus{
     translate: 0px 2px;
-    text-shadow:1px 1px 0 black ;
+    /* text-shadow:1px 1px 0 black ; */
 }
 header .textContainer {
     display: flex;
@@ -303,13 +299,8 @@ li.removeListHoverEffect:focus {
 .aboutMeText {
     width: 60%;
 }
-.aboutMeImage{
-    width: 300px;
-    height:300px;
-    overflow: hidden;
-}
 .aboutMeImage img {
-    width: 310px;
+    width: 444px;
 }
 
 /* PROJECTS */
@@ -446,6 +437,7 @@ footer a {
     /* GLOBAL */
     /* NAV */
     nav {
+        color: #313844;
         background-color: #ffffffa6;
         height: 40px;
         position: fixed;
@@ -469,13 +461,9 @@ footer a {
     }
     /* HEADER */
     h1{
-        /* position: absolute;     */
         right: 2%;
         width: 55%;
         font-size: 37px;
-    }
-    header .imageContainer {
-    width: 100%;
     }
     header {
         height: 100vh;
@@ -497,7 +485,7 @@ footer a {
         padding: 25px;
     }
     .aboutMeText {
-        margin-right: 30px;
+        padding-right: 45px;
         width: 100%;
         text-align: center;
     }
@@ -552,18 +540,6 @@ footer a {
         height: 100%;
         padding-top: 40px;
     }
-    /* header .wrapper {
-        flex-direction: column;
-        width: 100%;
-        margin: 0;
-    }
-    h1 {
-        font-size: 29px;
-        position: initial;
-        width: 100%;
-        margin: 0;
-        margin-top: 22px;
-    } */
     /* MAIN */
     .mainContentList {
         margin-top: 16px;
