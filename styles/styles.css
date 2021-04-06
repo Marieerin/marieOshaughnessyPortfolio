@@ -345,7 +345,7 @@ li.removeListHoverEffect:focus {
 
 /* CONTACT */
 #contactSection {
-    background: url('./assets/7-cloud-png-image.png') center no-repeat;
+    background: url('./assets/7-cloud-png-image.png') contain no-repeat;
 }
 .contact {
     padding: 50px;
