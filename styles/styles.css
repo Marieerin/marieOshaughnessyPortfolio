@@ -225,7 +225,8 @@ header .textContainer {
 #scrollBox {
     height: 30vh;
     width: 30%;
-    overflow: hidden;
+    overflow: scroll;
+    
 }
 
 /* MAIN */
