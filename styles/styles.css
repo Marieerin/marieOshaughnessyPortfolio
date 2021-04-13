@@ -7,7 +7,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
 /* FONTS */
-    /* font-family: 'Karla', sans-serif;
+    /* font-family: 'Press Start 2P', cursive;
+    font-family: 'Spicy Rice', cursive;
     font-family: 'Sen', sans-serif; */
 
 /* GLOBAL STYLES */ 
@@ -48,7 +49,7 @@ a {
     color: white;
 }
 h2 {
-    font-family: 'sen', sans-serif;
+    font-family: 'Spicy Rice', cursive;
     font-size: 42px;
     font-weight: 600;
     letter-spacing: 4px;
@@ -140,7 +141,7 @@ h2 {
     color: #313844;
     cursor: pointer;
     padding: 10px 0 10px 25px;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Spicy Rice', cursive;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 2px;
@@ -181,9 +182,10 @@ header div.wrapper {
 }
 h1,
 #lrgName {
-    font-family: sen;
+    font-family: 'Spicy Rice', cursive;
     font-weight: 900;
     letter-spacing: 4px;
+    text-shadow: 2px 2px 0 #21baba, 4px 4px 0 #c8fffff7, 6px 6px 0 #0cffff6b, 8px 8px 0 #37fca7f7;
 }
 #lrgName {
     font-size: 200px;
@@ -213,9 +215,24 @@ header .textContainer {
   from {translate: 0px 2px;}
   to {translate: 0px -400px;}
 }
+@-webkit-keyframes textScroll {
+  from {translate: 0px 2px;}
+  to {translate: 0px -400px;}
+}
+@-moz-keyframes textScroll {
+  from {translate: 0px 2px;}
+  to {translate: 0px -400px;}
+}
+@-o-keyframes textScroll {
+  from {translate: 0px 2px;}
+  to {translate: 0px -400px;}
+}
 #skillList {
     font-size: 45px;
     animation-name: textScroll;
+    -webkit-animation-name: textScroll 15s infinite; /* Safari 4+ */
+    -moz-animation-name:textScroll 15s infinite; /* Fx 5+ */
+    -o-animation-name:textScroll 15s infinite; 
     animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
