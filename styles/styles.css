@@ -135,7 +135,6 @@ h2 {
     left: -47px;
     transform: rotate(-45deg);
     width: 70px;
-    animation-delay: 5s;
     z-index: 20;
 }
 
@@ -263,6 +262,9 @@ header .textContainer {
 }
 
 /* MAIN */
+main {
+    padding-top: 100px;
+}
 .secondaryNav .projectOneSection,
 .secondaryNav .projectTwoSection,
 .secondaryNav .projectThreeSection,
@@ -504,7 +506,7 @@ footer a {
     /* NAV */
     nav {
         color: #313844;
-        background-color: #ffffffa6;
+        /* background-color: #ffffffa6; */
         height: 40px;
         position: fixed;
         z-index: 100;
@@ -532,7 +534,24 @@ footer a {
         font-size: 37px;
     }
     #scrollBox {
-        display: none;
+        /* display: flex; */
+    }
+    @keyframes textScrollX {
+    from {translate: 500px 0px;}
+    to {translate: -600px 0px;}
+    }
+    #skillList {
+        /* width: vw; */
+        display: flex;
+        animation-name: textScrollX;
+        /* overflow-x: scroll; */
+        justify-content: space-around;
+        padding: 20px;
+    }
+    #skillList li {
+        margin-bottom: 10px;
+        margin-left: 10px;
+        font-size: 14px;
     }
     header {
         height: 100vh;
