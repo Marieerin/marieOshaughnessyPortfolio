@@ -664,12 +664,30 @@ footer a {
 }
 @media screen and (max-width: 400px){
     /* GLOBAL */
+    body {
+        background: url('./assets/7-cloud-png-image.png') repeat-x top center, linear-gradient(0deg, rgb(47, 49, 71) 0%, rgb(66, 73, 139) 30%, rgb(132, 195, 252) 70%,rgb(255, 204, 233) 96%);
+    }
     /* NAV */
+    li.resumeButton {
+        width: 44%;
+    }
     /* HEADER */
     header {
         padding-top: 40px;
+        height: 85vh;
     }
+    h1 {
+        width: 100%;
+    }
+    header .textContainer {
+        width: 100%;
+    }
+
     /* MAIN */
+    .aboutMeText {
+        color: #2b2e55;
+        text-shadow: none;
+    }
     .mainContentList {
         margin-top: 16px;
     }
@@ -713,8 +731,14 @@ footer a {
         margin-top: 15px;
         justify-content: start;
     }
+    #projectCloud {
+        right: 100px;
+    }
     .contact .textContainer {
         padding: 6px;
+    }
+    .contact {
+        margin-top: 177px;
     }
     .socialMedia a {
         margin: 5px;
