@@ -21,7 +21,7 @@ html {
     src: '/styles/Fonts/VCR_OSD_MONO.ttf'; /*URL to font*/
 }
 body{
-    background: url('./assets/7-cloud-png-image.png') no-repeat, linear-gradient(0deg, rgba(47,49,71,1) 0%, rgba(66,73,139,1) 30%, rgba(132,195,252,1) 70%,rgb(255, 204, 233) 96%); 
+    background: url('./assets/7-cloud-png-image.png') no-repeat, linear-gradient(0deg, rgba(47,49,71,1) 0%, rgba(66,73,139,1) 30%, rgb(97, 174, 255) 70%,rgb(255, 204, 233) 96%); 
     color: white;
     text-shadow: 1px 1px 0 #2b2e55;
     scroll-behavior: smooth;
@@ -351,6 +351,8 @@ li.removeListHoverEffect:focus {
 }
 .aboutMeText {
     width: 60%;
+    color: #2b2e55;
+    text-shadow: none;
 }
 .aboutMeImage img {
     width: 444px;
@@ -684,10 +686,6 @@ footer a {
     }
 
     /* MAIN */
-    .aboutMeText {
-        color: #2b2e55;
-        text-shadow: none;
-    }
     .mainContentList {
         margin-top: 16px;
     }
