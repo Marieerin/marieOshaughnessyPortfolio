@@ -276,7 +276,7 @@ main {
 }
 .secondaryNav {
     font-family: 'Press Start 2P', sans-serif;
-    text-shadow: 2px 2px 0 #007676;
+    /* text-shadow: 2px 2px 0 #007676; */
     position: sticky;
     position: -webkit-sticky; 
     height: 100%;
@@ -420,7 +420,6 @@ li.removeListHoverEffect:focus {
 }
 .contact {
     position: relative;
-    text-shadow: 1px 1px 0 #0cffff6b;
     padding: 50px;
     padding-left: 0;
     margin-bottom: 50px;
@@ -526,10 +525,6 @@ footer a {
     /* FOOTER */
 }
 @media screen and (max-width: 800px){
-    header .wrapper {
-        flex-direction: column;
-    }
-
     .section.project {
         flex-direction: column;
     }
@@ -571,7 +566,11 @@ footer a {
     h1{
         right: 2%;
         font-size: 32px;
-    }    
+    }
+    header .wrapper {
+        flex-direction: column;
+    }
+    
     #skillList {
         display: flex;
         animation-name: textScrollX;
