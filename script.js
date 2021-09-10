@@ -14,7 +14,7 @@ $(document).ready(function () {
         const sectionSelected = e.target.className
         $('html').animate({
             scrollTop: $(`#${sectionSelected}`).offset().top
-        }, 990)
+        }, 1000)
     }
 
     $(".secondaryNav").on('click', "li", (res)=> {

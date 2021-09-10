@@ -23,7 +23,6 @@ html {
 body{
     background: url('./assets/7-cloud-png-image.png') no-repeat, linear-gradient(0deg, rgba(47,49,71,1) 0%, rgba(66,73,139,1) 30%, rgb(97, 174, 255) 70%,rgb(255, 204, 233) 96%); 
     color: white;
-    text-shadow: 1px 1px 0 #2b2e55;
     scroll-behavior: smooth;
     font-family: 'Lato', sans-serif;
 }
@@ -55,8 +54,8 @@ a {
 }
 h2 {
     font-family: 'Press Start 2P', sans-serif;
-    text-shadow: 2px 2px 0 #0cffff6b, -2px -2px 0 #ff0ce46b;;
-    font-size: 42px;
+    text-shadow: 2px 2px 0 #0cffff6b, -2px -2px 0 #ff0ce46b;
+    font-size: 27px;
     letter-spacing: 4px;
     margin: 0 0 25px 0;
 }
@@ -224,7 +223,7 @@ header .textContainer {
     width: 70%;
 }
 #arrowDown {
-    font-family:'Press Start 2P', sans-serif;
+    font-family:'Press Start 2P'!important, sans-serif;
     margin: 20px;
     padding: 5px;
     font-size: 23px;
@@ -275,8 +274,8 @@ main {
     margin-left: 10px;
 }
 .secondaryNav {
-    font-family: 'Press Start 2P', sans-serif;
-    /* text-shadow: 2px 2px 0 #007676; */
+    text-shadow: 2px 2px 0 #007676, 5px 5px 0 #0cffff6b, -5px -5px 0 #ff0ce46b;
+    transition: text-shadow 5s ease;
     position: sticky;
     position: -webkit-sticky; 
     height: 100%;
@@ -289,17 +288,17 @@ main {
 .secondaryNav li {
     margin-bottom: 13px;
     cursor: pointer;
-    font-size: 13.5px;
+    font-size: 15.5px;
     letter-spacing: 5px;
     font-weight: bold;
     font-family: 'Lato', sans-serif; 
 }
 .secondaryNav li:hover,
 .secondaryNav li:focus {
+    text-shadow: 2px 2px 0 #007676, -5px -5px 0 #0cffff6b, 5px 5px 0 #ff0ce46b;
     position: relative;
-    margin-left: 15px;
-    margin-bottom: 12px;
-    border-bottom: 1px solid white;
+    /* margin-left: 15px;
+    margin-bottom: 12px; */
 }
 li.removeListHoverEffect:hover,
 li.removeListHoverEffect:focus {
@@ -310,13 +309,15 @@ li.removeListHoverEffect:focus {
     border-bottom: none;
 }
 .sectionTitle {
-    color: #2b2e55;
+    color: #313844;
     text-shadow: none;
     letter-spacing: 10px;
     padding: 50px 0;
     text-align: left;
     justify-content: start;
     font-size: 20px;
+    font-weight: 200;
+    font-style: italic;
 }
 .mainContentList {
     margin-left: 50px;
@@ -356,7 +357,10 @@ li.removeListHoverEffect:focus {
     text-shadow: none;
 }
 .aboutMeImage img {
-    width: 444px;
+    margin-left: 15px;
+    width: 367px;
+    box-shadow: 5px 5px 0 #ff0ce46b,10px 10px 0 #ff0ce457, 15px 15px 0 #ff0ce43d;
+
 }
 
 /* PROJECTS */
@@ -555,9 +559,6 @@ footer a {
         width: 100vw;
         height: 100vh;
         padding-top: 30px;
-    }
-    .sectionTitle h3 {
-        font-size: 20px;
     }
     li.resumeButton {
         width: 40%;
