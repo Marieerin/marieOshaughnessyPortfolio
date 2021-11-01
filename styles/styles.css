@@ -268,7 +268,8 @@ main {
     margin-left: 10px;
 }
 .secondaryNav {
-    text-shadow: 2px 2px 0 #007676, 5px 5px 0 #0cffff6b, -5px -5px 0 #ff0ce46b;
+    color: white;
+    text-shadow: 2px 2px 0 #ff0ce3cb;
     transition: text-shadow 5s ease;
     position: sticky;
     position: -webkit-sticky; 
@@ -289,7 +290,7 @@ main {
 }
 .secondaryNav li:hover,
 .secondaryNav li:focus {
-    text-shadow: 2px 2px 0 #007676, -5px -5px 0 #0cffff6b, 5px 5px 0 #ff0ce46b;
+    /* text-shadow: 2px 2px 0 #007676, -5px -5px 0 #0cffff6b, 5px 5px 0 #ff0ce46b; */
     position: relative;
     /* margin-left: 15px;
     margin-bottom: 12px; */
