@@ -283,10 +283,10 @@ main {
 .secondaryNav li {
     margin-bottom: 13px;
     cursor: pointer;
-    font-size: 15.5px;
-    letter-spacing: 5px;
+    font-size: 10px;
+    letter-spacing: 3px;
     font-weight: bold;
-    font-family: 'Lato', sans-serif; 
+    font-family: 'Press Start 2P', sans-serif;
 }
 .secondaryNav li:hover,
 .secondaryNav li:focus {
