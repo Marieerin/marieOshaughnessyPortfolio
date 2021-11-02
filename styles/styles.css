@@ -217,13 +217,10 @@ header .textContainer {
     width: 70%;
 }
 #arrowDown {
-    font-family:'Press Start 2P', sans-serif;
     margin: 20px;
     padding: 5px;
-    font-size: 23px;
+    font-size: 35px;
     cursor: pointer;
-    border: 1.5px double;
-    border-radius: 11px;
 }
 #skillList {
     font-size: 27px;
