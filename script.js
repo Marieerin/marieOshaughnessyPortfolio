@@ -8,6 +8,12 @@ $(document).ready(function () {
             scrollTop: $('main').offset().top
         }, 1000)
     })
+    // $(document).keyup(()=>{ 
+    //     let arrowDown = document.getElementById('arrowDown');
+    //     console.log(arrowDown);
+    //     // if(arrowDown)
+    //     console.log('yo');
+    // })
 
     // function for crolling to the selected section
     const scrollToSection = (e) => {
